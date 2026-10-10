@@ -75,7 +75,7 @@ html{scroll-behavior:smooth}body{margin:0;background:#fbfdff}h1,h2{margin:0;font
 [data-node-id="via.hug"]{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 20px;border-radius:12px;background:#2866c7;color:#fff;font-weight:600;box-shadow:0 4px 12px rgb(40 102 199 / .16)}
 [data-node-id="via.hug"],[data-node-id="via.gmc"]{transition:transform 180ms ease,box-shadow 180ms ease,filter 180ms ease}
 @media(hover:hover){
-[data-node-id="via.hug"]:hover,[data-node-id="via.gmc"]:hover{transform:translateY(-2px);filter:brightness(1.08);box-shadow:0 7px 18px rgb(40 102 199 / .24)}
+[data-node-id="via.hug"]:hover,[data-node-id="via.gmc"]:hover{transform:translateY(-1px);filter:brightness(1.04);box-shadow:0 6px 16px rgb(40 102 199 / .20)}
 }
 [data-node-id="via.hug"]:active,[data-node-id="via.gmc"]:active{transform:translateY(0) scale(.98);box-shadow:0 2px 6px rgb(40 102 199 / .18)}
 [data-node-id="via.hug"]:focus-visible{outline:3px solid #2866c7;outline-offset:4px;box-shadow:0 4px 12px rgb(40 102 199 / .24)}
@@ -86,3 +86,9 @@ html{scroll-behavior:smooth}body{margin:0;background:#fbfdff}h1,h2{margin:0;font
 @property --cta-orbit-angle{syntax:"<angle>";initial-value:0deg;inherits:false}
 @keyframes github-border-orbit{to{--cta-orbit-angle:360deg}}
 @media(prefers-reduced-motion:reduce){[data-node-id="via.hug"]::after{animation:none}}
+
+/* Consistent subtle feedback for navigation and footer actions. */
+[data-node-id="via"] a:not([data-node-id="via.hug"]){transition:color 180ms ease,transform 180ms ease}
+@media(hover:hover){[data-node-id="via"] a:not([data-node-id="via.hug"]):hover{color:#2866c7;transform:translateY(-1px)}}
+[data-node-id="via"] a:not([data-node-id="via.hug"]):active{transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){[data-node-id="via"] a:not([data-node-id="via.hug"]){transition:none}[data-node-id="via"] a:not([data-node-id="via.hug"]):hover{transform:none}}
