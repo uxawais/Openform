@@ -44,7 +44,7 @@ html{scroll-behavior:smooth}body{margin:0;background:#fbfdff}h1,h2{margin:0;font
 /* Extend section backgrounds while preserving the original content width. */
 [data-node-id="via.cdt"],
 [data-node-id="via.val"]{
-  padding-inline:max(32px,calc((100% - 1440px)/2 + 32px));
+  padding-inline:32px;
 }
 [data-node-id="via.elk"],
 [data-node-id="via.tux"],
@@ -68,7 +68,7 @@ html{scroll-behavior:smooth}body{margin:0;background:#fbfdff}h1,h2{margin:0;font
 [data-node-id="via"] .hero-heading>span{letter-spacing:inherit}
 [data-node-id="via"] .hero-heading>span:last-child{color:#176bd5}
 .hero-wordmark{position:absolute;top:13.5%;left:0;width:100%;text-align:center;white-space:nowrap;font-family:Outfit,sans-serif;font-weight:600;font-size:17.875cqw;line-height:1.1;letter-spacing:-.42cqw;color:#b2cdec}
-.hero-artwork{position:absolute;z-index:1;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}
+.hero-artwork{position:absolute;z-index:1;left:36.51889534883721%;top:34.24479166666667%;width:27.10755813953488%;height:54.00390625%;object-fit:fill;pointer-events:none}
 
 .hero-backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;opacity:.08}
 /* Give the GitHub action a clear primary treatment and responsive feedback. */
